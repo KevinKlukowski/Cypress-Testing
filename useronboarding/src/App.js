@@ -40,7 +40,7 @@ function App() {
   const postNewFriend =(newFriend) =>{
     axios.post('https://reqres.in/api/users', newFriend)
     .then((res)=>{
-      setFriends([res.data,... friends])
+      setFriends([res.data, ...friends])
       setFormValues(initialFormValues)
     })
     .catch((err)=>{

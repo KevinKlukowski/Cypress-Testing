@@ -17,7 +17,7 @@ export default function FriendForm(props) {
   return (
     <form className="form container" onSubmit={onSubmit}>
       <div className="form-group submit">
-        <h2>Add a Friend</h2>
+        <h2>Add your favorite person here:</h2>
 
       <div className="form-group inputs">
         <h4>General information</h4>
@@ -59,7 +59,7 @@ export default function FriendForm(props) {
             />
         </label>
         <br></br>
-        <button disabled={disabled}>submit</button>
+        <button id='button' disabled={disabled}>submit</button>
 
         <div className="errors">
           <div>{errors.username}</div>
